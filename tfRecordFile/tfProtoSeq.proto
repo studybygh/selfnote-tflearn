@@ -1,0 +1,6 @@
+message FeatureList { repeated Feature feature = 1; };
+message FeatureLists { map<string, FeatureList> feature_list = 1; };
+message SequenceExample {
+    Features context = 1;
+    FeatureLists feature_lists = 2;
+};
